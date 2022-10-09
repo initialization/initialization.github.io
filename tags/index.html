@@ -284,6 +284,8 @@
                             
                                 "生活没有你想象的这么好，但也没有你想象这么糟",
                             
+                                "人生苦短开心面对，生活不简单尽量简单过",
+                            
                                 "从来没有真正的绝境, 只有心灵的迷途",
                             
                         ],
@@ -302,9 +304,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -341,6 +341,33 @@
                     </span>
                 </a>
                 
+                
+                <a href="/tags/%E4%BB%A3%E7%A0%81%E4%BA%BA%E7%94%9F/" title="代码人生: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="代码人生" style="background-color: #D5F5E3;">代码人生
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%BF%B7%E8%8C%AB/" title="迷茫: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="迷茫" style="background-color: #E8F8F5;">迷茫
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%84%A6%E8%99%91/" title="焦虑: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="焦虑" style="background-color: #FEF9E7;">焦虑
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -365,7 +392,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"JSON","weight":1,"link":"/tags/JSON/"},{"text":"Ajax","weight":1,"link":"/tags/Ajax/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"JSON","weight":1,"link":"/tags/JSON/"},{"text":"Ajax","weight":1,"link":"/tags/Ajax/"},{"text":"代码人生","weight":1,"link":"/tags/代码人生/"},{"text":"迷茫","weight":1,"link":"/tags/迷茫/"},{"text":"焦虑","weight":1,"link":"/tags/焦虑/"}], {
         autoResize: true
     });
 </script>
@@ -445,7 +472,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">166</span>
+                        class="white-color">317</span>
             
             
             

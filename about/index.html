@@ -291,6 +291,8 @@
                             
                                 "生活没有你想象的这么好，但也没有你想象这么糟",
                             
+                                "人生苦短开心面对，生活不简单尽量简单过",
+                            
                                 "从来没有真正的绝境, 只有心灵的迷途",
                             
                         ],
@@ -309,9 +311,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -327,21 +327,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">2</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">2</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -357,21 +357,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">2</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">2</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -515,7 +515,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,3],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,4],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -557,7 +557,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Markdown","value":1}],
+                data: [{"name":"Markdown","value":1},{"name":"代码人生","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -581,7 +581,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["JSON","Ajax"]
+                data: ["JSON","Ajax","代码人生","迷茫","焦虑"]
             }
         ],
         yAxis: [
@@ -594,7 +594,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1,1],
+                data: [1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -775,6 +775,24 @@
             </a>
             
             
+            
+            <a href="/tags/%E4%BB%A3%E7%A0%81%E4%BA%BA%E7%94%9F/">
+                <span class="chip center-align waves-effect waves-light chip-default">代码人生</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E8%BF%B7%E8%8C%AB/">
+                <span class="chip center-align waves-effect waves-light chip-default">迷茫</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%84%A6%E8%99%91/">
+                <span class="chip center-align waves-effect waves-light chip-default">焦虑</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -905,7 +923,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">166</span>
+                        class="white-color">317</span>
             
             
             
